@@ -477,3 +477,6 @@ $RECYCLE.BIN/
 *.lnk
 
 appsettings.json
+API/reactivities.db
+API/reactivities.db-shm
+API/reactivities.db-wal
