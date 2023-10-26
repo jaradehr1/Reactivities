@@ -15,8 +15,8 @@ function App() {
   const { commonStore, userStore } = useStore();
 
   useEffect(() => {
-    if(commonStore.token)
-      userStore.getUser().finally( () => commonStore.appLoaded);
+    if (commonStore.token)
+      userStore.getUser().finally(() => commonStore.setAppLoaded());
     else
       commonStore.setAppLoaded();
   }, [commonStore, userStore])
